@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>0308df08-c151-4676-a6ae-271c4a3ef9a8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>47008df5-a663-4491-8545-fd30538cfe96</UniqueIdentifier>
+    </Filter>
+    <Page Include="Common\StandardStyles.xaml">
+      <Filter>Common</Filter>
+    </Page>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="Game">
+      <UniqueIdentifier>{74bbe0ae-98dc-4706-8872-8b90ad3f83fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrain">
+      <UniqueIdentifier>{47e00b2b-440c-41f1-bd59-f13e1ba147d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SimpleTextRenderer.cpp" />
+    <ClCompile Include="DirectXBase.cpp" />
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="DirectXPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include=".\Common\AppResource.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\QuadRawCx.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\Terrain.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\Deform.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\Quad.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\World.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\QuadTreeBuild.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameRenderer.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DxUtils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TerrainEntity.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="DirectXPage.xaml.h" />
+    <ClInclude Include="SimpleTextRenderer.h" />
+    <ClInclude Include="BasicTimer.h" />
+    <ClInclude Include="DirectXHelper.h" />
+    <ClInclude Include="DirectXBase.h" />
+    <ClInclude Include=".\Common\AppResource.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\World.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Level.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Circle.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\FixedArray.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Point.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Sync.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\SyncCriticalSection.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\AutoSync.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\Quad.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\QuadRawCx.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\Terrain.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\Deform.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\DeformResult.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\QuadTreeBuild.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameRenderer.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameRendererState.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DxUtils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainEntity.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameEntity.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameContext.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LiquidusDx_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DirectXPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Sample.txt" />
+  </ItemGroup>
+</Project>
